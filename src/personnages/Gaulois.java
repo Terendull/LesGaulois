@@ -4,7 +4,7 @@ public class Gaulois {
 	
 	private String nom;
 	private int force;
-	private int effetpotion = 1;
+	private int effetPotion = 1;
 	
 	public Gaulois(String nom, int force) {
 		this.nom = nom;
@@ -14,6 +14,7 @@ public class Gaulois {
 	public String getNom() {
 		return nom;
 	}
+	
 	
 	public void parler(String texte) {
 		System.out.println(prendreParole() + "« " + texte + "»");
@@ -29,14 +30,15 @@ public class Gaulois {
 		romain.recevoirCoup(force / 3);
 	}
 	
-	@Override
-	public String toString() {
-		return "Gaulois [nom=" + nom + ", force=" + force + ", effetpotion=" + effetpotion + "]";
+	
+	
+	public void boirePotion(int forcePotion) {
+		effetPotion=forcePotion;
+		this.parler("Merci Druide, je sens que ma force est "+effetPotion+" fois decuplee.");
 	}
 	
-	
-	
-	
-	
+	public String toString() {
+		return "Gaulois [nom=" + nom + ", force=" + force + ", effetPotion=" + effetPotion + "]";
+	}
 	
 }
