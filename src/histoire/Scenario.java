@@ -7,7 +7,7 @@ public class Scenario {
 		
 		
 		Gaulois asterix = new Gaulois("Asterix",8);
-		Gaulois obelix = new Gaulois("Obelix",20);
+		Gaulois obelix = new Gaulois("Obelix",25);
 		Romain minus = new Romain ("Petibonum",6);
 		Druide panoramix = new Druide ("Panoramix",5,10);
 		panoramix.parler("Je vais aller preparer une petite potion...");
@@ -20,6 +20,20 @@ public class Scenario {
 		asterix.frapper(minus);
 		asterix.frapper(minus);
 		asterix.frapper(minus);
+		System.out.println("\n \n");
+		Village village = new Village("Village des Irreductibles", 30);
+		Chef abraracourcix = new Chef ("Abraracourcix", 6,1,village);
+		village.setChef(abraracourcix);
+		village.ajouterHabitant(asterix);
+		village.ajouterHabitant(obelix);
+		village.afficherVillageois();
+		System.out.println("");
+		minus.sEquiper(Equipement.CASQUE);
+		minus.sEquiper(Equipement.CASQUE);
+		minus.sEquiper(Equipement.BOUCLIER);
+		minus.sEquiper(Equipement.CASQUE);
+		
+		
 	}
 
 	
