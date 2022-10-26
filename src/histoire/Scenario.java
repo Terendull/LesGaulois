@@ -9,6 +9,10 @@ public class Scenario {
 		Gaulois asterix = new Gaulois("Asterix",8);
 		Gaulois obelix = new Gaulois("Obelix",25);
 		Romain minus = new Romain ("Petibonum",6);
+		minus.sEquiper(Equipement.CASQUE);
+		minus.sEquiper(Equipement.CASQUE);
+		minus.sEquiper(Equipement.BOUCLIER);
+		minus.sEquiper(Equipement.CASQUE);
 		Druide panoramix = new Druide ("Panoramix",5,10);
 		panoramix.parler("Je vais aller preparer une petite potion...");
 		panoramix.preparerPotion();
@@ -28,10 +32,7 @@ public class Scenario {
 		village.ajouterHabitant(obelix);
 		village.afficherVillageois();
 		System.out.println("");
-		minus.sEquiper(Equipement.CASQUE);
-		minus.sEquiper(Equipement.CASQUE);
-		minus.sEquiper(Equipement.BOUCLIER);
-		minus.sEquiper(Equipement.CASQUE);
+
 		
 		
 	}
