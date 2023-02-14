@@ -47,6 +47,7 @@ public class Gaulois {
 		this.parler("Merci Druide, je sens que ma force est "+effetPotion+" fois decuplee.");
 	}
 	
+	@Override
 	public String toString() {
 		return "Gaulois [nom=" + nom + ", force=" + force + ", effetPotion=" + effetPotion + "]";
 	}
